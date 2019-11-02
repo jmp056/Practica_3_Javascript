@@ -17,14 +17,19 @@
     <br>
     <label>Peso</label>
     <br>
-    <input type="number" id="Peso" placeholder="Digite su peso(En Libras)" >
+    <input type="number" id="Peso" placeholder="Digite su peso(En Libras)"  min="1">
     <br>
     <button type="button" onclick="Calcular()">Calcular</button>
+    <br>
+    <label id="Resultado"></label>
     
     <script> // Script de la pagina
         function Calcular() {
             if(Validar() == false)
                 alert("Ingrese un peso y una altura valida");
+            else
+                Calculo();
+
         }
 
         function Validar() {//Funcion para validar altura y peso
@@ -37,6 +42,27 @@
             if(Pe <= 0) //Valida que el peso sea mayor que 0
                 return false;
             return true;
+        }
+
+        function Calculo() {
+            if(parseInt(document.getElementById("Altura").value) == 5){//Condiciones cuando la altura es 5
+                if(parseInt(document.getElementById("Peso").value) <= 100)//Cuando pesa menos de 101
+                    alert("Usted es delgado");
+                else if(parseInt(document.getElementById("Peso").value) > 100 && parseFloat(document.getElementById("Peso").value) <= 150) //Cuando pesa entre 101 y 150
+                    alert("Su peso es normal");
+                else if(parseInt(document.getElementById("Peso").value) > 150) //Cuando pesa mas de 150
+                    alert("Usted esta en sobrepeso");     
+            }
+            else if(parseInt(document.getElementById("Altura").value) == 6){//Condiciones cuando la altura es 6
+                if(parseInt(document.getElementById("Peso").value) <= 155)//Cuando pesa menos de 156
+                    alert("Usted es delgado");
+                else if(parseInt(document.getElementById("Peso").value) > 155 && parseFloat(document.getElementById("Peso").value) <= 180) //Cuando pesa entre 156 y 180
+                    alert("Su peso es normal");
+                else if(parseInt(document.getElementById("Peso").value) > 180) //Cuando pesa mas de 180
+                    alert("Usted esta en sobrepeso");     
+            }
+
+
         }
 
     </script>
