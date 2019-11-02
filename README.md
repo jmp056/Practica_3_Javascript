@@ -2,7 +2,7 @@
 
 # Practica 3 Javascript
 Esta practica consiste en la creacion de una somulacion de la balanza Antonia 2000, la cual tiene la finalidad
-de medir los conocimientos basicos de JavaScript adquiridos en la clase numero 6 de un diplomado el cual esta destinado a promover los conocimientos vasicos de HTML, CSS y JS, esta simulacion fue creada por Jonathan Maria parra y cuenta como la practica numero 3 de dicho diplomado.
+de medir los conocimientos basicos de JavaScript adquiridos en la clase numero 6 de un diplomado el cual esta destinado a promover los conocimientos basicos de HTML, CSS y JS, esta simulacion fue creada por Jonathan Maria parra y cuenta como la practica numero 3 de dicho diplomado.
 
 # Requisitos
 Hacer una simulacion del programa "Antonia 2000" (Maquina amarilla de pesaje que esta colocada en el supermercado OLE )
