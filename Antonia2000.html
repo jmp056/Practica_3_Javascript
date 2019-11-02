@@ -19,7 +19,26 @@
     <br>
     <input type="number" id="Peso" placeholder="Digite su peso(En Libras)" >
     <br>
-    <button type="button">Calcular</button>
+    <button type="button" onclick="Calcular()">Calcular</button>
     
+    <script> // Script de la pagina
+        function Calcular() {
+            if(Validar() == false)
+                alert("Ingrese un peso y una altura valida");
+        }
+
+        function Validar() {//Funcion para validar altura y peso
+            if(document.getElementById("Peso").value == "") //Valida que el peso no este vacio
+                return false;
+            var Alt = parseInt(document.getElementById("Altura").value); //Toma el valor de la altura
+            var Pe = parseInt(document.getElementById("Peso").value); // Toma el valor del peso
+            if(Alt < 5 && Alt > 6)//Valida que la altura este entre 5 y 6
+                return false;
+            if(Pe <= 0) //Valida que el peso sea mayor que 0
+                return false;
+            return true;
+        }
+
+    </script>
 </body>
 </html>
