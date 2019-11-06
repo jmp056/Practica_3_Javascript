@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="CSS/MisEstilos.css" rel="stylesheet" type="text/css"/>
-    <title>Antonia 2000</title>
-</head>
-<body>
-    <label>Altura</label> <!--Altura-->
-    <br>
-    <select id="Altura"> 
-        <option value="5"> 5 pies</option>
-        <option value="6"> 6 pies</option>
-    </select>
-    <br>
-    <label>Peso</label>
-    <br>
-    <input type="number" id="Peso" placeholder="Digite su peso(En Libras)"  min="1">
-    <br>
-    <button type="button" onclick="Calcular()">Calcular</button>
-    <br>
-    <label id="Resultado"></label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="CSS/MisEstilos.css" rel="stylesheet" type="text/css"/>
+        <title>Antonia 2000</title>
+    </head>
+    <body>
+        <div id="Plano" class="Centralizar"><!--Division Principal-->
+            <div id="BordeExterno" class="Centralizar"> <!--Borde externo-->
+                <div id="BordeCentro" class="Centralizar"> <!--Borde del centro-->
+                    <div id="BordeInterno" class="Centralizar"> <!--Borde interno-->
+                        <label id="LAltura" class="Centralizar">Altura</label> <!--Label de la altura-->
+                        <select id="Altura" class="Centralizar"> <!--Select de la altura-->
+                            <option value="5"> 5 pies</option>
+                            <option value="6"> 6 pies</option>
+                        </select>
+                        <label id="LPeso" class="Centralizar">Peso</label> <!--Label del peso-->
+                        <input type="number" id="Peso" class="Centralizar" placeholder="Digite su peso(En Libras)"  min="1"> <!--Numerico del peso-->
+                        <button id="Boton" class="Centralizar" type="button" onclick="Calcular()">Calcular</button> <!--Boton para calcular-->
+                        <img id="Imagen" class="Centralizar" src="Imagenes/Niveles.jpg">
+                        <h1 id="Antonia" class="Centralizar">Antonia</h1>
+                        <div id="MostrarResultado" class="Centralizar">
+                                <label id="Resultado"></label>
+                        </div>
+                        <h1 id="DosMil" class="Centralizar">2000</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 
-    
     <script> // Script de la pagina
         function Calcular() {
             if(Validar() == false)
@@ -70,5 +78,4 @@
         }
 
     </script>
-</body>
 </html>

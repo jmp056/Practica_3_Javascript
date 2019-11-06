@@ -1,7 +1,119 @@
-#Altura{
-    width: 165px;
+h1{
+    color: yellow;
+    font-size: 40px;
+}
+
+#Antonia{
+    left: 30px;
+    bottom: 20px;
+}
+
+#DosMil{
+    left: 600px;
+    bottom: 20px;
+}
+
+#MostrarResultado{
+    background-color: red;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 300px;
+    left: 220px;
+    bottom: 15px;
+    font-weight: bold;
+}
+
+#Imagen{
+    width: 300px;
+    height: 150px;
+    left: 220px;
+    bottom: 95px;
+    border-radius: 20px;
+}
+
+#Boton{
+    left: 320px;
+    bottom: 260px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 #Peso{
-    width: 165px;
+    width: 195px;
+    left: 270px;
+    margin: 0 auto;
+    bottom: 310px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
 }
+
+#LPeso{
+    font-size: 30px;
+    left: 330px;
+    margin: 0 auto;
+    bottom: 335px;
+    font-weight: bold;
+}
+
+#Altura{
+    width: 165px;
+    left: 285px;
+    margin: 0 auto;
+    bottom: 375px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align-last: center;
+}
+
+#LAltura{
+    font-size: 30px;
+    left: 320px;
+    margin: 0 auto;
+    bottom: 405px;
+    font-weight: bold;
+}
+
+#BordeInterno{
+    width: 750px;
+    height: 450px;
+    background-color: rgb(43, 43, 145);
+    border-radius: 450px 450px 0px 0px;
+    left: 50px;
+    bottom: 40px;
+}
+
+#BordeCentro{
+    width: 860px;
+    height: 550px;
+    background-color: red;
+    border-radius: 500px 500px 0px 0px;
+    left: 40px;
+}
+
+#BordeExterno{
+    width: 950px;
+    height: 590px;
+    background-color: yellow;
+    border-radius: 450px 450px 0px 0px;
+    left: 25px;
+}
+
+#Plano{
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 152);
+    left: 50px;
+}
+
+.Centralizar{
+    margin: 0 auto;
+    bottom: 0px;
+    position: absolute;
+}
+
